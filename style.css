@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+img,
+picture {
+  max-width: 100%; }
+
+.hero-section {
+  background-image: url(/Images/hero-bg.jpg.jpg);
+  min-height: 100vh;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  object-fit: contain; }

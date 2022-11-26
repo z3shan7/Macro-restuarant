@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+// ------- removes default margins paddings ------ 
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+// Make images easier to work with 
+img,
+picture {
+    max-width: 100%;
+    // display: block;
+}
+
+:root {
+    --color-primary: #f42f2c;
+    --heading-color: #222222;
+    --paragraph-color: #777777;
+    --half-white: #ffffff;
+
+    --f-family: 'Poppins', sans-serif;
+
+}
