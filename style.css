@@ -1,7 +1,14 @@
+body {
+  font-family: var(--f-family); }
+
+html {
+  font-size: 62.5%; }
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 0 solid transparent; }
 
 body,
 h1,
@@ -15,16 +22,88 @@ dl,
 dd {
   margin: 0; }
 
+/* Make images easier to work with */
 img,
 picture {
   max-width: 100%; }
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+ol,
+ul {
+  list-style: none; }
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-tap-highlight-color: transparent; }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  line-height: inherit;
+  color: inherit; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
 
 :root {
   --color-primary: #f42f2c;
   --heading-color: #222222;
   --paragraph-color: #777777;
-  --half-white: #ffffff;
+  --white: #ffffff;
   --f-family: 'Poppins', sans-serif; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px; }
+  .navbar__navbtns {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px; }
+  .navbar__navLinks {
+    background: transparent;
+    border: none;
+    color: var(--white);
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+    display: inline-block; }
+  .navbar__drop-down {
+    position: relative; }
+  .navbar__drop-down-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 10px;
+    position: absolute;
+    top: 41px;
+    right: -10px;
+    width: 200px;
+    font-size: 12px;
+    padding: 2rem;
+    display: none; }
+  .navbar__drop-down-list.active {
+    display: flex; }
 
 .hero-section {
   background-image: url(/Images/hero-bg.jpg.jpg);
@@ -34,9 +113,10 @@ picture {
   background-repeat: no-repeat; }
   .hero-section__content {
     max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    margin: 0 auto; }
   .hero-section__logo-box {
-    margin-top: 20px; }
+    padding: 20px;
+    text-align: center; }
+
+p {
+  color: #fff; }

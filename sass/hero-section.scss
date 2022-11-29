@@ -8,13 +8,17 @@
 
     &__content {
         max-width: 1200px;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 0 auto;
+
     }
 
     &__logo-box {
-        margin-top: 20px;
+
+        padding: 20px;
+        text-align: center;
     }
+}
+
+p {
+    color: #fff;
 }

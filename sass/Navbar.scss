@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+
+    &__navbtns {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+
+    }
+
+    &__navLinks {
+        background: transparent;
+        border: none;
+        color: var(--white);
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 500;
+        outline: none;
+        display: inline-block;
+    }
+
+    &__drop-down {
+        position: relative;
+    }
+
+    &__drop-down-list {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        gap: 10px;
+        position: absolute;
+        top: 41px;
+        right: -10px;
+        width: 200px;
+        font-size: 12px;
+        padding: 2rem;
+        display: none;
+    }
+
+    &__drop-down-list.active {
+        display: flex;
+    }
+}
