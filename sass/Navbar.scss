@@ -6,11 +6,6 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
 
-    // &__content {
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
 
 
     &__navbtns {
@@ -91,7 +86,7 @@
 @media screen and (max-width:750px) {
     .navbar {
         justify-content: space-between;
-        // position: relative;
+
 
 
         &__content {
@@ -103,6 +98,14 @@
             width: 280px;
             background-color: rgba(0, 0, 0, .9);
             padding: 2rem;
+            transform: translateX(-100%);
+            transition: 0.5s ease-in;
+
+
+        }
+
+        &__content.show-sidebar {
+            transform: translateX(0);
 
         }
 
@@ -111,39 +114,100 @@
             align-items: flex-start;
             justify-content: center;
             padding-top: 30px;
-            // gap: 0;
 
         }
 
-        &__navLinks:focus {
+        &__navLinks.active-color {
             color: var(--color-primary);
-            color: red;
 
         }
 
-        &__drop-down.active &__navbtns {}
+        &__dropdown-level-2.clicked-color {
+            color: var(--color-primary);
+
+        }
 
         &__icon,
         &__menu {
             display: block;
         }
 
+        &__menu {
+            font-size: 16px;
+            letter-spacing: 1.1px;
+            font-family: inherit;
+        }
+
+        &__ham {
+            cursor: pointer;
+        }
+
+        &__icon {
+            position: relative;
+            top: 5px;
+
+            &,
+            &::before,
+            &::after {
+                width: 3rem;
+                height: 2px;
+                background-color: #fff;
+                display: inline-block;
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                transition: all .3s;
+            }
+
+            &::before {
+                top: -.8rem;
+            }
+
+            &::after {
+                top: .8rem;
+            }
+        }
+
+        &__ham:hover &__icon::before {
+            top: -1rem;
+
+        }
+
+        &__ham:hover &__icon::after {
+            top: 1rem;
+
+        }
+
+        &__ham.rotate-icon &__icon {
+            background-color: transparent;
+        }
+
+        &__ham.rotate-icon &__icon::before {
+            top: 0;
+            transform: rotate(135deg);
+        }
+
+        &__ham.rotate-icon &__icon::after {
+            top: 0;
+            transform: rotate(-135deg);
+        }
+
         &__navLinks {
             font-size: 14px;
         }
 
-
-
         &__drop-down-list {
             position: static;
-            opacity: 1;
             background: transparent;
             color: #fff;
             font-size: 14px;
         }
 
         &__sub-list {
-            // display: flex;
             position: static;
             background: transparent;
         }
