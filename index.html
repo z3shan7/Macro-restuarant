@@ -27,36 +27,44 @@
                     <a href="index.html"><img src="./Images/logo.png" alt="logo img" srcset=""></a>
                 </div>
                 <section class="navbar">
-                    <p>menu</p>
+                    <p id="Menu" class="navbar__menu">menu</p>
+                    <div class="navbar__content">
 
-                    <div class="navbar__navbtns">
-                        <button type="button" class="navbar__navLinks">home</button>
-                        <button type="button" class="navbar__navLinks">about</button>
-                        <button type="button" class="navbar__navLinks">menu</button>
-                        <button type="button" class="navbar__navLinks">gallery</button>
+                        <div class="navbar__navbtns">
+                            <button type="button" class="navbar__navLinks">home</button>
+                            <button type="button" class="navbar__navLinks">about</button>
+                            <button type="button" class="navbar__navLinks">menu</button>
+                            <button type="button" class="navbar__navLinks">gallery</button>
 
-                        <div class="navbar__drop-down">
-                            <button type="button" class="navbar__navLinks drop-down-menu">blog</button>
-                            <div class="navbar__drop-down-list">
-                                <a href="#">Blog home</a>
-                                <a href="#">Blog single</a>
+                            <div class="navbar__drop-down" data_dropdown>
+                                <button type="button" class="navbar__navLinks drop-down-menu" dropdown-btn>blog</button>
+                                <div class="navbar__drop-down-list">
+                                    <a href="#">Blog home</a>
+                                    <a href="#">Blog single</a>
+                                </div>
+
+                            </div>
+                            <div class="navbar__drop-down  " data_dropdown>
+                                <button type="button" class="navbar__navLinks drop-down-menu"
+                                    dropdown-btn>pages</button>
+                                <div class="navbar__drop-down-list">
+                                    <a href="#">Elements</a>
+                                    <a href="#" class="dropdown-level-2">level 2</a>
+                                    <div class="navbar__sub-list">
+                                        <a href="#">Item one</a>
+                                        <a href="#">Item two</a>
+                                    </div>
+
+                                </div>
+
                             </div>
 
-                        </div>
-                        <div class="navbar__drop-down ">
-                            <button type="button" class="navbar__navLinks drop-down-menu">pages</button>
-                            <div class="navbar__drop-down-list">
-                                <a href="#">Elements</a>
-                                <a href="#">level 2</a>
-                            </div>
-
+                            <button type="button" class="navbar__navLinks">contact</button>
                         </div>
 
-                        <button type="button" class="navbar__navLinks">contact</button>
+
                     </div>
-
-
-                    <p>icon</p>
+                    <p id="hamIcon" class='navbar__icon'>icon</p>
 
                 </section>
 
