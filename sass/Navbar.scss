@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 20px;
@@ -11,7 +11,7 @@
     &__navbtns {
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-items: center;
         gap: 20px;
 
     }
@@ -26,7 +26,24 @@
         font-weight: 500;
         outline: none;
         display: inline-block;
+        transition: all 300ms ease;
+
+    }
+
+    &__navLinks:hover {
         cursor: pointer;
+        color: var(--color-primary);
+    }
+
+    .fa-solid {
+        margin-left: 3px;
+
+    }
+
+    &__dropdown-level-2 {
+        display: flex;
+        justify-content: space-between;
+
     }
 
     &__drop-down {
@@ -43,21 +60,19 @@
         right: -10px;
         width: 200px;
         font-size: 12px;
-        padding: 2rem;
+        padding: 1.5rem;
         display: none;
-        transition: all 450ms ease-in-out, transform 250ms ease-in-out;
+        transition: all 450s ease-in-out;
     }
 
     &__drop-down.active &__drop-down-list {
-
         display: flex;
-
     }
 
     &__sub-list {
-        background-color: salmon;
+        background-color: rgb(255, 255, 255);
         position: absolute;
-        padding: 2rem;
+        padding: 1.5rem;
         gap: 10px;
         font-size: 12px;
         width: 200px;
@@ -86,6 +101,7 @@
 @media screen and (max-width:750px) {
     .navbar {
         justify-content: space-between;
+        align-items: flex-end;
 
 
 
@@ -117,10 +133,18 @@
 
         }
 
+
+        // .navbar__navLinks:hover {
+        //     color: #fff;
+        // }
+
+
         &__navLinks.active-color {
             color: var(--color-primary);
 
         }
+
+
 
         &__dropdown-level-2.clicked-color {
             color: var(--color-primary);
@@ -136,6 +160,7 @@
             font-size: 16px;
             letter-spacing: 1.1px;
             font-family: inherit;
+            color: #fff;
         }
 
         &__ham {
@@ -144,15 +169,16 @@
 
         &__icon {
             position: relative;
-            top: 5px;
+            top: 9px;
 
             &,
             &::before,
             &::after {
-                width: 3rem;
+                width: 2rem;
                 height: 2px;
                 background-color: #fff;
                 display: inline-block;
+
             }
 
             &::before,
@@ -164,21 +190,21 @@
             }
 
             &::before {
-                top: -.8rem;
+                top: -.7rem;
             }
 
             &::after {
-                top: .8rem;
+                top: .7rem;
             }
         }
 
         &__ham:hover &__icon::before {
-            top: -1rem;
+            top: -.8rem;
 
         }
 
         &__ham:hover &__icon::after {
-            top: 1rem;
+            top: .8rem;
 
         }
 
@@ -197,19 +223,31 @@
         }
 
         &__navLinks {
-            font-size: 14px;
+            font-size: var(--fsize14);
+
         }
+
+
 
         &__drop-down-list {
             position: static;
             background: transparent;
             color: #fff;
-            font-size: 14px;
+            font-size: var(--fsize14);
         }
 
         &__sub-list {
             position: static;
             background: transparent;
+        }
+
+        .drop-down-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            // display
+
         }
     }
 }

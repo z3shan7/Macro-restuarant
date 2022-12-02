@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Macro</title>
 </head>
@@ -20,7 +24,6 @@
     <!-- hero-section -->
     <section class="hero-section">
         <div class="hero-section__content">
-
             <!--  Header section -->
             <nav>
                 <div class="hero-section__logo-box">
@@ -37,7 +40,9 @@
                             <button type="button" class="navbar__navLinks">gallery</button>
 
                             <div class="navbar__drop-down" data_dropdown>
-                                <button type="button" class="navbar__navLinks drop-down-menu" dropdown-btn>blog</button>
+                                <button type="button" class="navbar__navLinks drop-down-menu" dropdown-btn>blog
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
                                 <div class="navbar__drop-down-list">
                                     <a href="#">Blog home</a>
                                     <a href="#">Blog single</a>
@@ -45,11 +50,14 @@
 
                             </div>
                             <div class="navbar__drop-down " data_dropdown>
-                                <button type="button" class="navbar__navLinks drop-down-menu"
-                                    dropdown-btn>pages</button>
+                                <button type="button" class="navbar__navLinks drop-down-menu" dropdown-btn>pages
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
                                 <div class="navbar__drop-down-list">
                                     <a href="#">Elements</a>
-                                    <a href="#" class="navbar__dropdown-level-2">level 2</a>
+                                    <a href="#" class="navbar__dropdown-level-2">level 2
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </a>
                                     <div class="navbar__sub-list">
                                         <a href="#">Item one</a>
                                         <a href="#">Item two</a>
@@ -65,20 +73,46 @@
 
                     </div>
                     <div class="navbar__ham">
-                        <p id="hamIcon" class='navbar__icon '>&nbsp;</p>
+                        <p id="hamIcon" class='navbar__icon'>&nbsp;</p>
 
                     </div>
 
                 </section>
-
             </nav>
-            <!--  Header section Ends-->
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quos beatae saepe at animi unde! Totam at
-                itaque quos inventore.</p> -->
+            <!--  Header section Ends -->
+            <section class="hero-section__text">
+                <p class="hero-section__sub-header">Wide Option of Choice</p>
+                <h1 class="heading-1">Delicious Recipes</h1>
+
+                <p class="paragraph-1">inappropriate behavior is often laughed off as “boys will be boys,” women face
+                    higher conduct standards especially in
+                    the workplace. That’s why it’s crucial that, as women.</p>
+
+                <button class="btn-1 hero-section__btn">Check our menu</button>
+            </section>
         </div>
     </section>
     <!-- hero-section Ends -->
-    <script src="app.js"></script>
+
+    <!-- about section -->
+    <section class="about section-center">
+        <div class="about__content">
+            <h2 class="heading-2">About Our Story</h2>
+            <p class="paragraph-1 about__text">Who are in extremely love with eco friendly system. Lorem ipsum dolor sit
+                amet,
+                consectetur
+                adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat</p>
+            <button class="btn-1 about__btn">View full menu</button>
+        </div>
+        <div class="about__img">
+            <img src="./Images/about-img.jpg.jpg" alt="burger img" srcset="">
+        </div>
+    </section>
+    <!-- about section Ends -->
+    <script type="module" src="app.js"></script>
 </body>
 
 </html>

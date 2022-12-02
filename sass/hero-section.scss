@@ -4,6 +4,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 0 40px;
 
 
@@ -11,14 +12,32 @@
         max-width: 1200px;
         margin: 0 auto;
 
+
     }
 
     &__logo-box {
         padding: 20px;
         text-align: center;
     }
-}
 
-p {
-    color: #fff;
+    &__text {
+        padding-top: 12rem;
+    }
+
+    &__sub-header {
+        font-size: var(--fsize14);
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+
+    &__btn:hover {
+        background-color: var(--heading-color);
+        cursor: pointer;
+
+    }
+
+
 }

@@ -1,3 +1,5 @@
+import drinks from "./drinks"
+
 const dropDown = document.querySelectorAll('.drop-down-menu')
 const dropDownList = document.querySelectorAll('.navbar__drop-down-list')
 const levelTwo = document.querySelector('.navbar__dropdown-level-2')

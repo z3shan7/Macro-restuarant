@@ -3,5 +3,64 @@ body {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
+}
+
+.section-center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8rem 0;
+}
+
+.heading-1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 72px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.heading-2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 1rem 0;
+    color: var(--heading-color);
+}
+
+.paragraph-1 {
+    font-size: var(--fsize14);
+    font-weight: 300;
+    color: #fff;
+    // width: auto;
+    // max-width: auto;
+    line-height: 22px;
+    margin-bottom: 1rem;
+
+}
+
+.btn-1 {
+    font-size: var(--fsize14);
+    font-weight: 500;
+    line-height: 42px;
+    text-transform: uppercase;
+    background-color: var(--color-primary);
+    padding: 0 30px 0 30px;
+    color: #fff;
+    transition: all 300ms ease-in;
+}
+
+@media screen and (max-width:1200px) {
+    .section-center {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .section-center {
+        padding-left: 20px;
+        padding-right: 20px;
+
+
+    }
 }
