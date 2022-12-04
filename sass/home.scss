@@ -32,11 +32,13 @@ html {
     font-size: var(--fsize14);
     font-weight: 300;
     color: #fff;
-    // width: auto;
-    // max-width: auto;
     line-height: 22px;
     margin-bottom: 1rem;
 
+}
+
+.text-color {
+    color: var(--paragraph-color);
 }
 
 .btn-1 {

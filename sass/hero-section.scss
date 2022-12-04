@@ -22,6 +22,7 @@
 
     &__text {
         padding-top: 12rem;
+
     }
 
     &__sub-header {
@@ -37,6 +38,10 @@
         background-color: var(--heading-color);
         cursor: pointer;
 
+    }
+
+    &__paragraph {
+        max-width: 515px;
     }
 
 

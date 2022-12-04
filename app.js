@@ -44,3 +44,4 @@ hamIcon.addEventListener('click', () => {
 
 
 })
+console.log('working')
