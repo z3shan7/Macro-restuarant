@@ -21,7 +21,6 @@
 
     &__btn:hover {
         cursor: pointer;
-        // transform: translateY(-5px);
         -webkit-box-shadow: 0px 16px 31px -12px rgba(244, 47, 44, 1);
         -moz-box-shadow: 0px 16px 31px -12px rgba(244, 47, 44, 1);
         box-shadow: 0px 16px 31px -12px rgba(244, 47, 44, 1);
@@ -35,7 +34,7 @@
         gap: 60px;
         padding-left: 30px;
         padding-right: 30px;
-        // align-items: flex-start;
+
 
     }
 

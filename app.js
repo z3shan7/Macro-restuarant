@@ -1,4 +1,44 @@
-import drinks from "./drinks"
+// import drinks from "./drinks"
+
+const drinks = [
+    {
+        id: 1,
+        title: 'Cappuccion',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+
+    {
+        id: 2,
+        title: 'Macchiato',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 3,
+        title: 'Piccolo Latte',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 4,
+        title: 'Americano',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 5,
+        title: 'Mocha',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 6,
+        title: 'Cappuccion',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    }
+]
 
 const dropDown = document.querySelectorAll('.drop-down-menu')
 const dropDownList = document.querySelectorAll('.navbar__drop-down-list')
@@ -44,3 +84,21 @@ hamIcon.addEventListener('click', () => {
 
 
 })
+
+//  Scroll Navbar
+
+const navbar = document.querySelector('.navbar')
+console.log(navbar)
+
+// window.onscroll = function () { scrollFunction() };
+window.addEventListener('scroll', scrollFunction)
+function scrollFunction() {
+    if (window.scrollY > navbar.offsetHeight) {
+        navbar.classList.add('fixedNav')
+
+    }
+    else {
+        navbar.classList.remove('fixedNav')
+    }
+    // if (document.body.scrollTop > 20) {
+}

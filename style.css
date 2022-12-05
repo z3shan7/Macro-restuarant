@@ -23,10 +23,14 @@ html {
   margin: 1rem 0;
   color: var(--heading-color); }
 
+.heading-3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--heading-color); }
+
 .paragraph-1 {
   font-size: var(--fsize14);
   font-weight: 300;
-  color: #fff;
   line-height: 22px;
   margin-bottom: 1rem; }
 
@@ -134,10 +138,9 @@ html {
     color: var(--white);
     font-family: inherit;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px !important;
     font-weight: 500;
     outline: none;
-    display: inline-block;
     transition: all 300ms ease; }
   .navbar__navLinks:hover {
     cursor: pointer;
@@ -146,7 +149,8 @@ html {
     margin-left: 3px; }
   .navbar__dropdown-level-2 {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
   .navbar__drop-down {
     position: relative; }
   .navbar__drop-down-list {
@@ -155,7 +159,7 @@ html {
     background-color: #fff;
     gap: 10px;
     position: absolute;
-    top: 41px;
+    top: 45px;
     right: -10px;
     width: 200px;
     font-size: 12px;
@@ -180,6 +184,15 @@ html {
     display: flex; }
   .navbar__icon, .navbar__menu {
     display: none; }
+
+.fixedNav.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(34, 34, 34, 0.9);
+  width: 100%;
+  border: 0;
+  transition: all 400ms ease; }
 
 @media screen and (max-width: 750px) {
   .navbar {
@@ -286,7 +299,8 @@ html {
     background-color: var(--heading-color);
     cursor: pointer; }
   .hero-section__paragraph {
-    max-width: 515px; }
+    max-width: 515px;
+    color: #fff; }
 
 .about {
   display: flex;
@@ -338,7 +352,31 @@ html {
     color: var(--heading-color);
     background-color: #fff;
     font-weight: 500;
-    width: 210px; }
+    width: 210px;
+    cursor: pointer; }
   .drinks .active {
     background-color: var(--color-primary);
     color: #fff; }
+  .drinks__list {
+    padding-top: 4rem;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr; }
+  .drinks__header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem; }
+  .drinks__blocks {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 2px 38px -7px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 3px 2px 38px -7px rgba(0, 0, 0, 0.05);
+    box-shadow: 3px 2px 38px -7px rgba(0, 0, 0, 0.05); }
+  .drinks__text {
+    text-align: left;
+    width: 80%;
+    color: var(--paragraph-color);
+    font-family: inherit; }
+  .drinks__prince {
+    color: var(--color-primary); }
