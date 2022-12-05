@@ -291,11 +291,12 @@ html {
 .about {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  gap: 20px; }
   .about__content {
     flex-basis: 50%; }
   .about__img {
-    flex-basis: 50%; }
+    flex-basis: 45%; }
   .about__text {
     color: var(--paragraph-color) !important;
     line-height: 24px;
@@ -320,16 +321,24 @@ html {
   .drinks__content {
     text-align: center; }
   .drinks__links {
-    padding: 5rem 0;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    -webkit-box-shadow: 1px 1px 26px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 26px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 26px 3px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    margin-top: 5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    gap: 2px; }
   .drinks__Btns {
-    padding: 40px 0;
+    padding: 45px 0;
     font-size: 12px;
     color: var(--heading-color);
     background-color: #fff;
     font-weight: 500;
-    max-width: 184px; }
+    width: 210px; }
   .drinks .active {
-    background-color: var(--color-primary); }
+    background-color: var(--color-primary);
+    color: #fff; }
