@@ -129,6 +129,17 @@ html {
   --f-family: 'Poppins', sans-serif;
   --fsize14: 14px; }
 
+input:focus::placeholder {
+  color: transparent; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -352,7 +363,7 @@ html {
     padding: 0;
     margin: 0;
     margin-top: 5rem;
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
     gap: 2px; }
   .drinks__Btns {
@@ -370,7 +381,8 @@ html {
     padding-top: 4rem;
     display: grid;
     gap: 30px;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    transition: all 400ms ease-in; }
   .drinks__header {
     display: flex;
     justify-content: space-between;
@@ -395,30 +407,12 @@ html {
     padding: 20px 0;
     font-size: 10px; }
   .drinks__list {
-    grid-template-columns: 1fr; }
-  .drinks__text {
-    text-align: left;
-    width: 80%;
-    color: var(--paragraph-color);
-    font-family: inherit; }
-  .drinks__prince {
-    color: var(--color-primary); } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 550px) {
   .drinks__links {
-    display: flex;
     flex-direction: column;
-    background-color: #fff;
-    align-items: center;
-    -webkit-box-shadow: 1px 1px 26px 3px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 1px 1px 26px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 1px 1px 26px 3px rgba(0, 0, 0, 0.1);
-    padding: 0;
-    margin: 0;
-    margin-top: 5rem;
-    border-radius: 5px;
-    overflow: hidden;
-    gap: 2px; }
+    background-color: #fff; }
   .drinks__blocks {
     padding: 1.4rem; }
   .drinks__Btns {
@@ -426,9 +420,35 @@ html {
     font-size: 10px;
     width: 100%; }
   .drinks__text {
-    text-align: left;
-    width: 80%;
-    color: var(--paragraph-color);
-    font-family: inherit; }
-  .drinks__prince {
-    color: var(--color-primary); } }
+    width: 100%; } }
+
+.reservation {
+  background: linear-gradient(rgba(17, 22, 24, 0.75), rgba(17, 22, 24, 0.75)), url(/Images/reservation-bg.jpg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh; }
+  .reservation__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px; }
+  .reservation__text {
+    flex-basis: 50%; }
+  .reservation__heading {
+    color: #fff !important; }
+  .reservation__paragraph {
+    color: #fff !important; }
+  .reservation__form {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 100px 40px;
+    gap: 10px; }
+  .reservation .form-input {
+    padding: 0.575rem 0.75rem;
+    border-color: #222222;
+    color: #999999;
+    border: 1px solid #ced4da; }
+  .reservation .form-input:focus {
+    outline: none; }

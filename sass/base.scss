@@ -82,6 +82,30 @@ html {
 
 }
 
+input:focus::placeholder {
+    color: transparent;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// input[type='date']:in-range::-webkit-datetime-edit-year-field,
+// input[type='date']:in-range::-webkit-datetime-edit-month-field,
+// input[type='date']:in-range::-webkit-datetime-edit-day-field,
+// input[type='date']:in-range::-webkit-datetime-edit-text {
+//     color: transparent;
+
+// }
+
+
+
 // button {
 //     display: block;
 // }

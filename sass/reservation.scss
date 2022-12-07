@@ -1,0 +1,54 @@
+.reservation {
+    // background-color: rgba(17, 22, 24, 0.75);
+    background: linear-gradient(rgba(17, 22, 24, 0.75),
+            rgba(17, 22, 24, 0.75)),
+        url(/Images/reservation-bg.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    // width: 100%;
+    height: 80vh;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 130px;
+    }
+
+    &__text {
+        flex-basis: 50%;
+    }
+
+    &__heading {
+        color: #fff !important;
+    }
+
+    &__paragraph {
+        color: #fff !important;
+
+    }
+
+    &__form {
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        // width: 180px;
+        // padding: 4rem 3rem;
+        padding: 100px 40px;
+        gap: 10px;
+
+    }
+
+    .form-input {
+        padding: 0.575rem 0.75rem;
+        border-color: #222222;
+        color: #999999;
+        border: 1px solid #ced4da;
+    }
+
+    .form-input:focus {
+        outline: none;
+    }
+
+}

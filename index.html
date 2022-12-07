@@ -114,6 +114,8 @@
     </section>
     <!-- about section Ends -->
 
+    <!-- drinks list -->
+
     <section class="drinks">
         <div class="drinks__content section-center">
             <h3 class="heading-2">What kind of Foods we serve for you</h3>
@@ -121,15 +123,15 @@
 
 
             <ul class="drinks__links">
-                <li class="drinks__Btns drinks__allMenu active">All Menu</li>
-                <li class="drinks__Btns drinks__breakfast">Breakfast</li>
-                <li class="drinks__Btns drinks__lunch">Lunch</li>
-                <li class="drinks__Btns drinks__dinner">Dinner</li>
-                <li class="drinks__Btns drinks__budgetMeal">Budget Meal</li>
-                <li class="drinks__Btns drinks__buffet ">Buffet</li>
+                <li class="drinks__Btns drinks__allMenu active" data-id="All Menu">All Menu</li>
+                <li class="drinks__Btns drinks__breakfast" data-id="breakfast">Breakfast</li>
+                <li class="drinks__Btns drinks__lunch" data-id="lunch">Lunch</li>
+                <li class="drinks__Btns drinks__dinner" data-id="dinner">Dinner</li>
+                <li class="drinks__Btns drinks__budgetMeal" data-id="budget meal">Budget Meal</li>
+                <li class="drinks__Btns drinks__buffet" data-id="buffet">Buffet</li>
             </ul>
             <div class="drinks__list">
-                <article class="drinks__blocks">
+                <!-- <article class="drinks__blocks">
                     <div class="drinks__header">
                         <h4 class="drinks__heading heading-3">Cappuccion</h4>
                         <h4 class="drinks__prince">$49</h4>
@@ -176,14 +178,39 @@
                     </div>
                     <p class="paragraph-1 drinks__text">Usage of the Internet is becoming more common due to rapid
                         advance.</p>
-                </article>
+                </article> -->
 
             </div>
         </div>
+    </section>
+    <!-- drinks list ends-->
 
+    <!-- reservation -->
+    <section class="reservation ">
+        <div class="reservation__content section-center">
+            <div class="reservation__text">
+                <h5 class="heading-2 reservation__heading">Reserve Your Seats to Confirm if You Come with Your Family
+                </h5>
+                <p class="paragraph-1 reservation__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                </p>
+            </div>
+            <div class="reservation__form form">
+                <input type="text" class="form-input" placeholder="Your Name">
+                <input type="text" class="form-input" placeholder="Your Email Address">
+                <input type="number" class="form-input" placeholder="Phone Number">
+                <input type="date" placeholder="Date" onfocus="(this.type='date')" class="form-input"
+                    placeholder="Select Date & time">
+                <input type="text" class="form-input" placeholder="event">
+                <button class="btn-1">Make Reservation</button>
+            </div>
+
+        </div>
 
     </section>
-
+    <!-- reservation ends -->
 
     <script type="module" src="app.js"></script>
 </body>

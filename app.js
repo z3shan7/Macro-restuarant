@@ -1,9 +1,10 @@
 // import drinks from "./drinks"
 
-const drinks = [
+const menu = [
     {
         id: 1,
         title: 'Cappuccion',
+        category: 'breakfast',
         text: 'Usage of the Internet is becoming more common due to rapid advance.',
         price: 49
     },
@@ -11,30 +12,35 @@ const drinks = [
     {
         id: 2,
         title: 'Macchiato',
+        category: 'budget meal',
         text: 'Usage of the Internet is becoming more common due to rapid advance.',
         price: 49
     },
     {
         id: 3,
         title: 'Piccolo Latte',
+        category: 'lunch',
         text: 'Usage of the Internet is becoming more common due to rapid advance.',
         price: 49
     },
     {
         id: 4,
         title: 'Americano',
+        category: 'dinner',
         text: 'Usage of the Internet is becoming more common due to rapid advance.',
         price: 49
     },
     {
         id: 5,
         title: 'Mocha',
+        category: 'breakfast',
         text: 'Usage of the Internet is becoming more common due to rapid advance.',
         price: 49
     },
     {
         id: 6,
-        title: 'Cappuccion',
+        title: 'Ristretto',
+        category: 'buffet',
         text: 'Usage of the Internet is becoming more common due to rapid advance.',
         price: 49
     }
@@ -49,7 +55,7 @@ const navBtns = document.querySelectorAll('[dropdown-btn]')
 const hamIcon = document.querySelector('.navbar__ham')
 const navContent = document.querySelector('.navbar__content')
 
-console.log(hamIcon)
+// console.log(hamIcon)
 
 document.addEventListener('click', e => {
     const isDropdownBtn = e.target.matches('[dropdown-btn]')
@@ -88,7 +94,7 @@ hamIcon.addEventListener('click', () => {
 //  Scroll Navbar
 
 const navbar = document.querySelector('.navbar')
-console.log(navbar)
+// console.log(navbar)
 
 // window.onscroll = function () { scrollFunction() };
 window.addEventListener('scroll', scrollFunction)
@@ -101,4 +107,47 @@ function scrollFunction() {
         navbar.classList.remove('fixedNav')
     }
     // if (document.body.scrollTop > 20) {
+}
+
+const menuSection = document.querySelector('.drinks__list')
+const menuBtns = document.querySelectorAll('.drinks__Btns')
+console.log(menuBtns)
+// load content
+window.addEventListener('DOMContentLoaded', () => {
+    displayMenuItems(menu)
+
+})
+
+// filter items
+
+menuBtns.forEach((btn => {
+    btn.addEventListener('click', (e) => {
+        const category = e.currentTarget.dataset.id
+        const menuCategory = menu.filter((menuItems) => {
+            if (menuItems.category === category) {
+                return menuItems;
+            }
+        })
+        if (category === 'All Menu') {
+            displayMenuItems(menu)
+        } else {
+            displayMenuItems(menuCategory)
+        }
+    })
+}))
+
+function displayMenuItems(menuItems) {
+    let displayMenu = menuItems.map((item) => {
+
+        return `<article class="drinks__blocks">
+                    <div class="drinks__header">
+                        <h4 class="drinks__heading heading-3">${item.title}</h4>
+                        <h4 class="drinks__prince">$${item.price}</h4>
+                    </div>
+                    <p class="paragraph-1 drinks__text">${item.text}</p>
+                </article>`;
+    })
+    displayMenu = displayMenu.join('')
+    menuSection.innerHTML = displayMenu
+
 }
