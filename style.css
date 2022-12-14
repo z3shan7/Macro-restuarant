@@ -26,7 +26,8 @@ html {
 .heading-3 {
   font-size: 18px;
   font-weight: 600;
-  color: var(--heading-color); }
+  color: #fff;
+  padding-bottom: 1.5rem; }
 
 .paragraph-1 {
   font-size: var(--fsize14);
@@ -140,6 +141,10 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+::selection {
+  color: #fff;
+  background-color: var(--color-primary); }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -212,7 +217,8 @@ input::-webkit-inner-spin-button {
   background-color: rgba(34, 34, 34, 0.9);
   width: 100%;
   border: 0;
-  transition: all 400ms ease; }
+  transition: all 400ms ease;
+  padding: 1rem 2rem; }
 
 @media screen and (max-width: 750px) {
   .navbar {
@@ -399,8 +405,10 @@ input::-webkit-inner-spin-button {
     width: 80%;
     color: var(--paragraph-color);
     font-family: inherit; }
-  .drinks__prince {
-    color: var(--color-primary); }
+  .drinks__price {
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 600; }
 
 @media screen and (max-width: 790px) {
   .drinks__Btns {
@@ -452,3 +460,147 @@ input::-webkit-inner-spin-button {
     border: 1px solid #ced4da; }
   .reservation .form-input:focus {
     outline: none; }
+
+.dropdown-menu {
+  width: 100%; }
+
+.drop-list:hover {
+  color: var(--color-primary);
+  cursor: pointer; }
+
+@media screen and (max-width: 975px) {
+  .reservation {
+    height: auto; }
+    .reservation__content {
+      flex-direction: column;
+      gap: 80px; }
+    .reservation__text {
+      flex-basis: 50%; }
+    .reservation__heading {
+      color: #fff !important; }
+    .reservation__paragraph {
+      color: #fff !important; }
+    .reservation__form {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      padding: 100px 40px;
+      gap: 10px; }
+    .reservation .form-input {
+      padding: 0.575rem 0.75rem;
+      border-color: #222222;
+      color: #999999;
+      border: 1px solid #ced4da; }
+    .reservation .form-input:focus {
+      outline: none; } }
+
+.gallery {
+  background-color: var(--bg-light); }
+  .gallery__content {
+    text-align: center; }
+  .gallery__imgs {
+    padding-top: 4rem;
+    background-color: #7777;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 5vw);
+    align-items: flex-start;
+    grid-template-rows: 1fr;
+    grid-gap: 40px; }
+    .gallery__imgs img {
+      width: 100%;
+      display: block;
+      height: 100%;
+      object-fit: cover; }
+  .gallery__items--1 {
+    grid-column: 1 / 3; }
+  .gallery__items--2 {
+    grid-column: 3 / 5; }
+  .gallery__items--3 {
+    grid-column: 5 / 7; }
+  .gallery__items--4 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3; }
+
+.testimonals {
+  background-image: url(/Images/review-bg.jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh; }
+
+.blogs__header {
+  text-align: center;
+  padding-bottom: 70px; }
+
+.blogs__rows {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.blogs__col {
+  padding: 0 15px 0 15px; }
+
+.blogs__img-box {
+  overflow: hidden; }
+
+.blogs .blog-img {
+  display: block;
+  transition: all .3s ease 0s;
+  object-fit: cover;
+  width: 100%; }
+
+.blogs .blog-img:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+
+.blogs__date {
+  background-color: #000;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 2px 15px 2px 15px; }
+
+.blogs__col-header {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  line-height: 22px;
+  transition: all 200ms ease-in;
+  width: 90%; }
+
+.blogs__col-header:hover {
+  cursor: pointer;
+  color: var(--color-primary); }
+
+.blogs__text {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 300; }
+
+.blogs__footer {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between; }
+
+.blogs__likes, .blogs__comments {
+  color: var(--paragraph-color);
+  font-weight: 300;
+  font-size: 14px; }
+
+@media screen and (max-width: 1000px) {
+  .blogs__rows {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 50px; } }
+
+@media screen and (max-width: 550px) {
+  .blogs__rows {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px; }
+  .blogs__col {
+    padding: 0; } }
+
+.footer {
+  background-color: var(--color-primary); }

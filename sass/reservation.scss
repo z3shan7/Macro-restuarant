@@ -1,5 +1,4 @@
 .reservation {
-    // background-color: rgba(17, 22, 24, 0.75);
     background: linear-gradient(rgba(17, 22, 24, 0.75),
             rgba(17, 22, 24, 0.75)),
         url(/Images/reservation-bg.jpg.jpg);
@@ -50,5 +49,68 @@
     .form-input:focus {
         outline: none;
     }
+
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.drop-list:hover {
+    color: var(--color-primary);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:975px) {
+    .reservation {
+        height: auto;
+
+
+        &__content {
+            flex-direction: column;
+            // justify-content: space-between;
+            // align-items: center;
+            gap: 80px;
+        }
+
+        &__text {
+            flex-basis: 50%;
+        }
+
+        &__heading {
+            color: #fff !important;
+        }
+
+        &__paragraph {
+            color: #fff !important;
+
+        }
+
+        &__form {
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            // padding: 4rem 3rem;
+            padding: 100px 40px;
+            gap: 10px;
+
+        }
+
+        .form-input {
+            padding: 0.575rem 0.75rem;
+            border-color: #222222;
+            color: #999999;
+            border: 1px solid #ced4da;
+        }
+
+        .form-input:focus {
+            outline: none;
+        }
+
+    }
+
 
 }

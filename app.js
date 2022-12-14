@@ -46,6 +46,52 @@ const menu = [
     }
 ]
 
+const menuImg = [
+    {
+        id: 1,
+        title: 'Cappuccion',
+        category: 'breakfast',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+
+    {
+        id: 2,
+        title: 'Macchiato',
+        category: 'budget meal',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 3,
+        title: 'Piccolo Latte',
+        category: 'lunch',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 4,
+        title: 'Americano',
+        category: 'dinner',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 5,
+        title: 'Mocha',
+        category: 'breakfast',
+        text: 'Usage of the Internet is becoming more common due to rapid advance.',
+        price: 49
+    },
+    {
+        id: 6,
+        img: "./Images/user.png.jpg"
+
+    }
+
+]
+
+
 const dropDown = document.querySelectorAll('.drop-down-menu')
 const dropDownList = document.querySelectorAll('.navbar__drop-down-list')
 const levelTwo = document.querySelector('.navbar__dropdown-level-2')
@@ -111,17 +157,34 @@ function scrollFunction() {
 
 const menuSection = document.querySelector('.drinks__list')
 const menuBtns = document.querySelectorAll('.drinks__Btns')
-console.log(menuBtns)
+// const 
+// console.log(menuBtns)
+
+
 // load content
+
 window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu)
 
+})
+
+//  active button
+
+menuBtns.forEach((button) => {
+    button.addEventListener('click', () => {
+        menuBtns.forEach((Element) => Element.classList.remove('active'))
+        button.classList.add('active')
+    })
 })
 
 // filter items
 
 menuBtns.forEach((btn => {
     btn.addEventListener('click', (e) => {
+        // btn.classList.add('active')
+
+
+        // btn.classList.remove('active')
         const category = e.currentTarget.dataset.id
         const menuCategory = menu.filter((menuItems) => {
             if (menuItems.category === category) {
@@ -133,7 +196,9 @@ menuBtns.forEach((btn => {
         } else {
             displayMenuItems(menuCategory)
         }
+
     })
+
 }))
 
 function displayMenuItems(menuItems) {
@@ -142,7 +207,7 @@ function displayMenuItems(menuItems) {
         return `<article class="drinks__blocks">
                     <div class="drinks__header">
                         <h4 class="drinks__heading heading-3">${item.title}</h4>
-                        <h4 class="drinks__prince">$${item.price}</h4>
+                        <h4 class="drinks__price">$${item.price}</h4>
                     </div>
                     <p class="paragraph-1 drinks__text">${item.text}</p>
                 </article>`;

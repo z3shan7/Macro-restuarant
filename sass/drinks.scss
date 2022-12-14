@@ -38,6 +38,7 @@
 
     }
 
+
     &__list {
         padding-top: 4rem;
         display: grid;
@@ -68,8 +69,10 @@
         font-family: inherit;
     }
 
-    &__prince {
+    &__price {
         color: var(--color-primary);
+        font-size: 18px;
+        font-weight: 600;
     }
 
 
