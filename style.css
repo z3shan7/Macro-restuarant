@@ -218,7 +218,8 @@ input::-webkit-inner-spin-button {
   width: 100%;
   border: 0;
   transition: all 400ms ease;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  z-index: 1000; }
 
 @media screen and (max-width: 750px) {
   .navbar {
@@ -259,8 +260,8 @@ input::-webkit-inner-spin-button {
       position: relative;
       top: 9px; }
       .navbar__icon, .navbar__icon::before, .navbar__icon::after {
-        width: 2rem;
-        height: 2px;
+        width: 1.5rem;
+        height: 1px;
         background-color: #fff;
         display: inline-block; }
       .navbar__icon::before, .navbar__icon::after {
@@ -269,13 +270,13 @@ input::-webkit-inner-spin-button {
         left: 0;
         transition: all .3s; }
       .navbar__icon::before {
-        top: -.7rem; }
+        top: -.5rem; }
       .navbar__icon::after {
-        top: .7rem; }
+        top: .5rem; }
     .navbar__ham:hover .navbar__icon::before {
-      top: -.8rem; }
+      top: -.6rem; }
     .navbar__ham:hover .navbar__icon::after {
-      top: .8rem; }
+      top: .6rem; }
     .navbar__ham.rotate-icon .navbar__icon {
       background-color: transparent; }
     .navbar__ham.rotate-icon .navbar__icon::before {
@@ -503,26 +504,10 @@ input::-webkit-inner-spin-button {
   .gallery__imgs {
     padding-top: 4rem;
     background-color: #7777;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 5vw);
-    align-items: flex-start;
-    grid-template-rows: 1fr;
+    display: flex;
     grid-gap: 40px; }
-    .gallery__imgs img {
-      width: 100%;
-      display: block;
-      height: 100%;
-      object-fit: cover; }
-  .gallery__items--1 {
-    grid-column: 1 / 3; }
-  .gallery__items--2 {
-    grid-column: 3 / 5; }
-  .gallery__items--3 {
-    grid-column: 5 / 7; }
-  .gallery__items--4 {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3; }
+  .gallery__items {
+    flex-basis: 33.333%; }
 
 .testimonals {
   background-image: url(./Images/review-bg.jpg.jpg);

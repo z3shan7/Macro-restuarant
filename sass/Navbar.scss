@@ -110,6 +110,7 @@
     border: 0;
     transition: all 400ms ease;
     padding: 1rem 2rem;
+    z-index: 1000;
 }
 
 @media screen and (max-width:750px) {
@@ -148,9 +149,6 @@
         }
 
 
-        // .navbar__navLinks:hover {
-        //     color: #fff;
-        // }
 
 
         &__navLinks.active-color {
@@ -188,8 +186,8 @@
             &,
             &::before,
             &::after {
-                width: 2rem;
-                height: 2px;
+                width: 1.5rem;
+                height: 1px;
                 background-color: #fff;
                 display: inline-block;
 
@@ -204,21 +202,21 @@
             }
 
             &::before {
-                top: -.7rem;
+                top: -.5rem;
             }
 
             &::after {
-                top: .7rem;
+                top: .5rem;
             }
         }
 
         &__ham:hover &__icon::before {
-            top: -.8rem;
+            top: -.6rem;
 
         }
 
         &__ham:hover &__icon::after {
-            top: .8rem;
+            top: .6rem;
 
         }
 
