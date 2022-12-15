@@ -31,17 +31,19 @@ html {
 .heading-3 {
     font-size: 18px;
     font-weight: 600;
-    color: #fff;
-    padding-bottom: 1.5rem;
 
+}
+
+.color-white {
+    color: #fff;
 }
 
 .paragraph-1 {
     font-size: var(--fsize14);
     font-weight: 300;
-
     line-height: 22px;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
+    // margin-top: 1rem;
 
 }
 
