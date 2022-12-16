@@ -49,6 +49,10 @@
 
     }
 
+    &__dropdown-level-2:hover {
+        color: var(--color-primary);
+    }
+
     &__drop-down {
         position: relative;
     }
@@ -94,6 +98,11 @@
     &__icon,
     &__menu {
         display: none;
+    }
+
+    &__links:hover {
+        color: var(--color-primary);
+
     }
 
 
