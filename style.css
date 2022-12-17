@@ -163,7 +163,7 @@ input::-webkit-inner-spin-button {
     color: var(--white);
     font-family: inherit;
     text-transform: uppercase;
-    font-size: 14px !important;
+    font-size: 12px !important;
     font-weight: 500;
     outline: none;
     transition: all 300ms ease; }
@@ -213,6 +213,9 @@ input::-webkit-inner-spin-button {
     display: none; }
   .navbar__links:hover {
     color: var(--color-primary); }
+
+.btn-pg {
+  font-size: 13px !important; }
 
 .fixedNav.navbar {
   position: fixed;
@@ -510,10 +513,11 @@ input::-webkit-inner-spin-button {
   .gallery__imgs {
     padding-top: 4rem;
     background-color: #7777;
-    display: flex;
-    grid-gap: 40px; }
-  .gallery__items {
-    flex-basis: 33.333%; }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px; }
 
 .testimonals {
   background-image: url(./Images/review-bg.jpg.jpg);

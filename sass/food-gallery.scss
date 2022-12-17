@@ -8,13 +8,14 @@
     &__imgs {
         padding-top: 4rem;
         background-color: #7777;
-        display: flex;
-        // display: grid;
-        // grid-template-columns: repeat(8, 1fr);
-        // grid-template-rows: repeat(6, 5vw);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        // justify-content: flex-start;
+        align-items: flex-start;
+        grid-template-rows: repeat(2, 1fr);
         // align-items: flex-start;
         // grid-template-rows: 1fr;
-        grid-gap: 40px;
+        grid-gap: 20px;
 
 
 
@@ -30,7 +31,8 @@
     }
 
     &__items {
-        flex-basis: 33.333%;
+        // flex-basis: 33.333%;
+
 
 
 

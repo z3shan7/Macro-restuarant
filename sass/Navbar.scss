@@ -20,11 +20,12 @@
 
     &__navLinks {
         background: transparent;
+        // background-color: skyblue;
         border: none;
         color: var(--white);
         font-family: inherit;
         text-transform: uppercase;
-        font-size: 14px !important;
+        font-size: 12px !important;
         font-weight: 500;
         outline: none;
         transition: all 300ms ease;
@@ -105,8 +106,18 @@
 
     }
 
+    // &__arrow {
+    //     font-weight: 500;
+    // }
 
 
+
+
+
+}
+
+.btn-pg {
+    font-size: 13px !important;
 
 }
 
