@@ -163,7 +163,7 @@ input::-webkit-inner-spin-button {
     color: var(--white);
     font-family: inherit;
     text-transform: uppercase;
-    font-size: 12px !important;
+    font-size: 14px !important;
     font-weight: 500;
     outline: none;
     transition: all 300ms ease; }
@@ -213,9 +213,6 @@ input::-webkit-inner-spin-button {
     display: none; }
   .navbar__links:hover {
     color: var(--color-primary); }
-
-.btn-pg {
-  font-size: 13px !important; }
 
 .fixedNav.navbar {
   position: fixed;
@@ -304,8 +301,7 @@ input::-webkit-inner-spin-button {
       background: transparent; }
     .navbar .drop-down-menu {
       display: flex;
-      justify-content: space-between;
-      align-items: center; } }
+      justify-content: space-between; } }
 
 .hero-section {
   background-image: url(./Images/hero-bg.jpg.jpg);
@@ -478,6 +474,26 @@ input::-webkit-inner-spin-button {
   color: var(--color-primary);
   cursor: pointer; }
 
+select {
+  padding: 0.575rem 0.75rem;
+  color: #999999;
+  border: 1px solid #ced4da; }
+
+select:focus {
+  outline: none; }
+
+option {
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0 29px 0 12px; }
+
+option:hover {
+  color: var(--color-primary) !important;
+  cursor: pointer !important; }
+
+option:checked {
+  color: var(--color-primary); }
+
 @media screen and (max-width: 975px) {
   .reservation {
     height: auto; }
@@ -496,8 +512,8 @@ input::-webkit-inner-spin-button {
       flex-direction: column;
       background-color: #fff;
       width: 100%;
-      padding: 100px 40px;
-      gap: 10px; }
+      gap: 10px;
+      border-radius: 5px; }
     .reservation .form-input {
       padding: 0.575rem 0.75rem;
       border-color: #222222;

@@ -37,7 +37,10 @@
 
                             <div class="navbar__drop-down" data_dropdown>
                                 <button type="button" class="navbar__navLinks drop-down-menu btn-pg" dropdown-btn>blog
-                                    <i class="fa-solid fa-chevron-down navbar__arrow"></i>
+                                    <span>
+                                        <i class="fa-solid fa-chevron-down navbar__arrow"></i>
+
+                                    </span>
                                 </button>
                                 <div class="navbar__drop-down-list">
                                     <a href="#" class="navbar__links">Blog home</a>
@@ -47,12 +50,18 @@
                             </div>
                             <div class="navbar__drop-down" data_dropdown>
                                 <button type="button" class="navbar__navLinks drop-down-menu btn-pg" dropdown-btn>pages
-                                    <i class="fa-solid fa-chevron-down navbar__arrow"></i>
+                                    <span>
+                                        <i class="fa-solid fa-chevron-down navbar__arrow"></i>
+
+                                    </span>
                                 </button>
                                 <div class="navbar__drop-down-list ">
                                     <a href="#" class="navbar__links">Elements</a>
                                     <a href="#" class="navbar__dropdown-level-2">level 2
-                                        <i class="fa-solid fa-chevron-right"></i>
+                                        <span>
+                                            <i class="fa-solid fa-chevron-right"></i>
+
+                                        </span>
                                     </a>
                                     <div class="navbar__sub-list">
                                         <a href="#" class="navbar__links">Item one</a>
@@ -151,17 +160,17 @@
                 <input type="number" class="form-input" placeholder="Phone Number">
                 <input type="date" placeholder="Date" class="form-input" placeholder="Select Date & time">
 
-                <div class="reservation__dropdown">
+                <!-- <div class="reservation__dropdown">
                     <input type="text" name="event" class="reservation__textbox" placeholder="Select Event" readonly>
-                </div>
-                <div class="option">
-                    <div>select Event</div>
-                    <div>Event One</div>
-                    <div>Event two</div>
-                    <div>Event three</div>
-                    <div>Event four</div>
-
-                </div>
+                </div> -->
+                <select name="" id="event">
+                    <option value="">Select event</option>
+                    <option value="">Select event</option>
+                    <option value="">Event one</option>
+                    <option value="">Event two</option>
+                    <option value="">Event three</option>
+                    <option value="">Event four</option>
+                </select>
 
 
 

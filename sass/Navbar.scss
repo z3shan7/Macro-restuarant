@@ -25,7 +25,7 @@
         color: var(--white);
         font-family: inherit;
         text-transform: uppercase;
-        font-size: 12px !important;
+        font-size: 14px !important;
         font-weight: 500;
         outline: none;
         transition: all 300ms ease;
@@ -116,10 +116,10 @@
 
 }
 
-.btn-pg {
-    font-size: 13px !important;
+// .btn-pg {
+//     // font-size: 1px !important;
 
-}
+// }
 
 .fixedNav.navbar {
     position: fixed;
@@ -275,8 +275,9 @@
 
         .drop-down-menu {
             display: flex;
+
             justify-content: space-between;
-            align-items: center;
+            // align-items: center;
 
             // display
 
