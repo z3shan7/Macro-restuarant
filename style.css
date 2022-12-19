@@ -528,18 +528,90 @@ option:checked {
     text-align: center; }
   .gallery__imgs {
     padding-top: 4rem;
-    background-color: #7777;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template: repeat(7, 5vw)/repeat(8, 1fr);
     grid-gap: 20px; }
+  .gallery__items--1 {
+    grid-column: 1/4;
+    grid-row: 1/5; }
+  .gallery__items--2 {
+    grid-column: 4/6;
+    grid-row: 1/6; }
+  .gallery__items--3 {
+    grid-column: 6/-1;
+    grid-row: 1/5; }
+  .gallery__items--4 {
+    grid-column: 1/4;
+    grid-row: 5/-1; }
+  .gallery__items--5 {
+    grid-column: 4/6;
+    grid-row: 5/-1; }
+  .gallery__items--6 {
+    grid-column: 6/-1;
+    grid-row: 5/-1; }
+  .gallery__pics {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    display: block; }
 
 .testimonals {
   background-image: url(./Images/review-bg.jpg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh; }
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .testimonals__text {
+    font-size: var(--fsize14);
+    font-weight: 300;
+    font-style: italic;
+    width: 555px;
+    line-height: 23px; }
+
+.swiper {
+  width: 50vw;
+  height: 50vh; }
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  /* display: flex; */
+  flex-direction: column;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  /* width: 50%; */ }
+
+.user-img {
+  padding-bottom: 1.5rem; }
+
+.star-logo {
+  padding-bottom: 1.5rem; }
+
+.star-icon {
+  color: #ffc000;
+  display: inline-block;
+  font-size: 14px; }
+
+.grey {
+  color: var(--paragraph-color); }
+
+@media screen and (max-width: 950px) {
+  .testimonals__text {
+    width: 100%; } }
 
 .blogs__header {
   text-align: center;

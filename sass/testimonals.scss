@@ -2,5 +2,81 @@
     background-image: url(./Images/review-bg.jpg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__text {
+        font-size: var(--fsize14);
+        font-weight: 300;
+        font-style: italic;
+        width: 555px;
+        line-height: 23px;
+    }
 }
+
+.swiper {
+    width: 50vw;
+    height: 50vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    /* display: flex; */
+    flex-direction: column;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* width: 50%; */
+}
+
+.user-img {
+    padding-bottom: 1.5rem;
+}
+
+.star-logo {
+    padding-bottom: 1.5rem;
+}
+
+.star-icon {
+    color: #ffc000;
+    display: inline-block;
+    font-size: 14px;
+
+}
+
+.grey {
+    color: var(--paragraph-color);
+}
+
+@media screen and (max-width:950px) {
+    .testimonals__text {
+        // font-size: var(--fsize14);
+        // font-weight: 300;
+        // font-style: italic;
+        width: 100%;
+        // line-height: 23px;
+    }
+
+
+}
+
+// .swiper-pagination {
+//     color: var(--color-primary);
+//     font-size: 18px;
+// }
