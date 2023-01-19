@@ -35,6 +35,9 @@ html {
   font-weight: 300;
   line-height: 22px; }
 
+.transform {
+  transition: all 300ms ease-in-out; }
+
 .text-color {
   color: var(--paragraph-color); }
 
@@ -127,6 +130,7 @@ html {
   --paragraph-color: #777777;
   --white: #ffffff;
   --bg-light: #f9f9ff;
+  --rating-color:#e3c01c;
   --f-family: 'Poppins', sans-serif;
   --fsize14: 14px; }
 
@@ -335,7 +339,7 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 750px) {
   .hero-section {
-    background-image: url(./Images/ikhsan-baihaqi-4QXE7YQy7eo-unsplash.jpg); } }
+    background-image: url(./Images/ikhsan-baihaqi-4QXE7YQy7eo-unsplash.jpg) !important; } }
 
 .about {
   display: flex;

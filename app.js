@@ -6,7 +6,8 @@ const menu = [
         title: 'Cappuccion',
         category: 'breakfast',
         text: 'Usage of the Internet is becoming more common due to rapid advance.',
-        price: 49
+        price: 49,
+
     },
 
     {
@@ -191,6 +192,7 @@ menuBtns.forEach((btn => {
                 return menuItems;
             }
         })
+        
         if (category === 'All Menu') {
             displayMenuItems(menu)
         } else {

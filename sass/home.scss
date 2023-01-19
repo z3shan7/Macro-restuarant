@@ -47,6 +47,10 @@ html {
 
 }
 
+.transform {
+    transition: all 300ms ease-in-out;
+}
+
 .text-color {
     color: var(--paragraph-color);
 }
