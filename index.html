@@ -19,6 +19,10 @@
 </head>
 
 <body>
+
+    <div class="preloader">
+        <span class="loader"></span>
+    </div>
     <!-- hero-section -->
     <section class="hero-section">
         <div class="hero-section__content">
@@ -466,6 +470,14 @@
                 clickable: true,
             },
         });
+    </script>
+    <!-- Pre Loader -->
+    <script>
+        const loader = document.querySelector('.preloader')
+        window.addEventListener('load', () => {
+            loader.style.display = "none"
+
+        })
     </script>
 
 </body>
